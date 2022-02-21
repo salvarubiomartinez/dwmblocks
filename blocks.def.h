@@ -5,7 +5,7 @@ static const Block blocks[] = {
     {"📅 ",     "date +'%d-%b-%y %H:%M'",                                                       30,                 0},
     {"",        "next-prayer",                                                                  60,                 1},
     {"",        "idate | grep Output | awk '{ print $4 $5 $10 }'",                              360,                0},
-    {" 🖮 ",     "/home/retterblond/Apps/dwm/getxkblayout | grep Layout | awk '{ print $3 }'",   0,                  2},
+    {"🖮 ",     "/home/retterblond/Apps/dwm/getxkblayout | grep Layout | awk '{ print $3 }'",   0,                  2},
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.
