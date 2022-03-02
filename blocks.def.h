@@ -5,9 +5,9 @@ static const Block blocks[] = {
     {"🖮 ",      "getxkblayout | grep Layout | awk '{ print $3 }'",                              0,                  2},
     {"📅 ",     "date +'%d-%b-%y %H:%M'",                                                       30,                 3},
     {"",        "next-prayer",                                                                  60,                 4},
-    {"",        "idate | grep Output | awk '{ print $4 $5 $10 }'",                              360,                5},
+    {"",        "idate --simple",                                                               360,                5},
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.
-static char delim[] = " | ";
+static char delim[] = " ❮ ";
 static unsigned int delimLen = 5;
