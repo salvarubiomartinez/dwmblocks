@@ -1,10 +1,10 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
     /*Icon*/	/*Command*/                                                                     /*Update Interval*/	    /*Update Signal*/
-    {" ",      "ethernet.sh",                                                                  100,                    8},
+    {"",        "ethernet.sh",                                                                  100,                    8},
     {"📍 ",     "curl ifconfig.me 2>/dev/null",                                                 300,                    7},
     {"",        "sb-volume",                                                                    10,                     9},
-    {"📎 ",     "sb-pacpackages",                                                               300,                    10},
+    {"",        "sb-pacpackages",                                                               0,                      10},
     {" ",      "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",                      5,                      1},
     {"🖮 ",      "getxkblayout | grep Layout | awk '{ print $3 }'",                              0,                      2},
     {"📅 ",     "date +'%d-%b-%y %H:%M'",                                                       30,                     3},
