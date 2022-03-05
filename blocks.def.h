@@ -9,7 +9,7 @@ static const Block blocks[] = {
     {"🖮 ",      "getxkblayout | grep Layout | awk '{ print $3 }'",                              0,                      2},
     {"📅 ",     "date +'%d-%b-%y %H:%M'",                                                       30,                     3},
     {"",        "next-prayer",                                                                  60,                     4},
-    {"🕋 ",     "idate --simple",                                                               3600,                   5},
+    {"🕋 ",     "idate --simple | awk '{ print $1 $2 $6 $7 }'",                                 3600,                   5},
     {"moon ",   "sb-moonphase",                                                                 3600,                   6},
 };
 
