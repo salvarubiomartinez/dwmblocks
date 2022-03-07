@@ -11,6 +11,7 @@ static const Block blocks[] = {
     {"",        "next-prayer",                                                                  60,                     4},
     {"🕋 ",     "idate --simple | awk '{ print $1 $2 $6 $7 }'",                                 3600,                   5},
     {"moon ",   "sb-moonphase",                                                                 3600,                   6},
+    {"",        "sb-forecast",                                                                  3600,                   11},
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.
